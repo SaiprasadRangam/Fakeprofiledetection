@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Profile Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ddd;
+            padding: 1em;
+        }
+        section {
+            padding: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fake Profile Detection</h1>
+</header>
+
+<nav>
+    <a href="#facebook" onclick="changeModule('facebook')">Facebook</a>
+    <a href="#instagram" onclick="changeModule('instagram')">Instagram</a>
+    <a href="#twitter" onclick="changeModule('twitter')">Twitter</a>
+    <a href="#linkedin" onclick="changeModule('linkedin')">LinkedIn</a>
+</nav>
+
+<section id="content">
+    <h2>Welcome to Fake Profile Detection!</h2>
+    <p>Please select a module from the navigation above.</p>
+</section>
+
+<script>
+    function changeModule(module) {
+        document.getElementById('content').innerHTML = `<h2>${module} Module</h2><p>Page 1 content goes here.</p>`;
+    }
+</script>
+
+</body>
+</html>
